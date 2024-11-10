@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Iansui-Regular';
+    src: url('font/Iansui-Regular.ttf') format('truetype'),
+         url('font/Iansui-Regular.woff') format('woff');
+}
+
+/* 設定整個頁面的平滑滾動效果 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Iansui-Regular', sans-serif;
+    background-color: #fcefb4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    font-size: 2rem;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px; 
+    margin-top: 20px;
+}
+
+.profile h3 {
+    margin-top: 1rem;
+    font-size: 24px;
+    margin-right: 40px;
+    margin-bottom: 30px; 
+}
+
+.information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.information h2,.contact h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.information p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a img {
+    vertical-align: middle;
+}
+
+.phone {
+    border-radius: 50%;
+}
+
+.Skills h2 {
+    text-align: left;
+    margin-right: 46em;
+}
+
+.Skills {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 48%;
+}
+
+.skill span {
+    width: 100px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #fb6f92;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ff758f;
+    border-radius: 5px;
+}
+
+.progress-bar > .percentage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.Experiences {
+    width: 100%;
+    padding: 20px;
+}
+
+.Econtainer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.Econtainer img {
+    margin-right: 20px;
+}
+
+.Econtainer2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.Econtainer2 img {
+    margin-left: 100px;
+}
+
+.Etext {
+    max-width: 600px;
+}
+
+.Etext p {
+    font-size: 22px;
+    color: #023e8a;
+    line-height: 1.6;
+    white-space: normal;
+    word-spacing: 0;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
